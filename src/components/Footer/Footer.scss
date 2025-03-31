@@ -1,0 +1,21 @@
+@use "../../styles/partials/variables" as *;
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: $background;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid $border;
+  z-index: 1000;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  color: $primary;
+}
+
+svg {
+  height: 50px;
+}
