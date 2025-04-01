@@ -1,0 +1,26 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: $background;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  color: $primary;
+  padding: 0 24px;
+
+  &__logo {
+    h1 {
+      @extend .bebas-neue-regular;
+      font-weight: 700;
+      color: $accent;
+    }
+  }
+}
