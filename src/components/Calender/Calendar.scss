@@ -1,0 +1,12 @@
+.MuiPickersCalendarHeader-labelContainer button {
+  display: none !important;
+}
+
+.MuiDayCalendar-monthContainer {
+  pointer-events: none;
+}
+
+.MuiDayCalendar-monthContainer button:hover {
+  background-color: transparent !important;
+  cursor: default !important;
+}

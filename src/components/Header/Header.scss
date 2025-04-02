@@ -3,10 +3,10 @@
 @use "../../styles/partials/mixins" as *;
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
   height: 50px;
   background-color: $background;
   display: flex;
@@ -14,7 +14,8 @@
   align-items: center;
   z-index: 1000;
   color: $primary;
-  padding: 0 24px;
+  padding: 0 16px;
+  margin-top: 16px;
 
   &__logo {
     h1 {
@@ -22,5 +23,21 @@
       font-weight: 700;
       color: $accent;
     }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // gap: 10px;
+  }
+
+  &__nav {
+    // width: 100px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__muscle {
+    height: 50px;
   }
 }
