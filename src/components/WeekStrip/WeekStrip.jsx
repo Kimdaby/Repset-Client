@@ -1,5 +1,5 @@
 import { format, addDays, startOfWeek } from "date-fns";
-import React, { useState } from "react";
+import { useState } from "react";
 import "./WeekStrip.scss";
 
 const WeekStrip = () => {

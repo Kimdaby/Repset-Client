@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import "./SingleCalendar.scss";
 
-const SingleCalendar = () => {
+const DataPage = () => {
   const today = new Date();
   const [value, setValue] = useState(today);
 
@@ -25,15 +25,15 @@ const SingleCalendar = () => {
           showDaysOutsideCurrentMonth={false}
           sx={{
             "& .Mui-selected": {
-              backgroundColor: "#1976d2 !important",
-              color: "#fff !important",
+              backgroundColor: "#1976d2",
+              color: "#fff",
             },
             "& .MuiPickersDay-root.Mui-selected": {
-              backgroundColor: "#1976d2 !important",
-              color: "#fff !important",
+              backgroundColor: "#1976d2",
+              color: "#fff",
             },
             "& .MuiPickersDay-root.Mui-selected:hover": {
-              backgroundColor: "#1565c0 !important",
+              backgroundColor: "#1565c0",
             },
           }}
         />
@@ -42,4 +42,4 @@ const SingleCalendar = () => {
   );
 };
 
-export default SingleCalendar;
+export default DataPage;

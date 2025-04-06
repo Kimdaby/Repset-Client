@@ -5,7 +5,7 @@
 .weekstrip {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 1rem;
   background-color: $background;
   overflow-x: auto;
 
@@ -14,8 +14,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 48px;
-    min-height: 64px;
+    min-width: 3rem;
+    min-height: 4rem;
     padding: 0.75rem;
     border: none;
     background: transparent;
@@ -35,13 +35,13 @@
 
     &.selected {
       color: white;
-      border-radius: 15px;
+      border-radius: 0.9375rem;
       background-color: $accent;
       font-weight: 700;
     }
 
     &.today {
-      border-bottom: 3px solid #0077b6;
+      border-bottom: 0.1875rem solid #0077b6;
     }
   }
 }
@@ -49,6 +49,6 @@
 .weekstrip__today-label {
   font-size: 1.125rem;
   font-weight: 600;
-  padding: 0 16px 8px 16px;
+  padding: 0 1rem 0.5rem 1rem;
   color: #333;
 }

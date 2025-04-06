@@ -69,25 +69,15 @@ const CalendarView = () => {
                 sx={{
                   maxHeight: "350px",
                   "& .Mui-selected": {
-                    backgroundColor: isCurrentMonth
-                      ? "#1976d2 !important"
-                      : "transparent !important",
-                    color: isCurrentMonth
-                      ? "#fff !important"
-                      : "inherit !important",
+                    backgroundColor: isCurrentMonth ? "#1976d2" : "transparent",
+                    color: isCurrentMonth ? "#fff" : "inherit",
                   },
                   "& .MuiPickersDay-root.Mui-selected": {
-                    backgroundColor: isCurrentMonth
-                      ? "#1976d2 !important"
-                      : "transparent !important",
-                    color: isCurrentMonth
-                      ? "#fff !important"
-                      : "inherit !important",
+                    backgroundColor: isCurrentMonth ? "#1976d2" : "transparent",
+                    color: isCurrentMonth ? "#fff" : "inherit",
                   },
                   "& .MuiPickersDay-root.Mui-selected:hover": {
-                    backgroundColor: isCurrentMonth
-                      ? "#1565c0 !important"
-                      : "transparent !important",
+                    backgroundColor: isCurrentMonth ? "#1565c0" : "transparent",
                   },
                 }}
               />

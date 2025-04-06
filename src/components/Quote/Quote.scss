@@ -1,0 +1,39 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+
+.quote {
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid $border;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.05);
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: $primary;
+    margin-bottom: 16px;
+  }
+
+  &__card {
+    background-color: $background;
+    border-left: 0.3125rem solid $accent;
+    padding: 1rem 1.25rem;
+    border-radius: 0.625rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    color: $text;
+  }
+
+  &__author {
+    font-size: 0.9rem;
+    text-align: right;
+    color: #888;
+  }
+}

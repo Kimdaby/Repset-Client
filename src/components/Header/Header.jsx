@@ -20,7 +20,7 @@ const Header = () => {
         />
         <MenuIcon
           sx={{ fontSize: 32, cursor: "pointer" }}
-          onClick={() => navigate("/profile")}
+          onClick={() => navigate("/")}
         />
       </div>
     </header>

@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import HomeFilledIcon from "@mui/icons-material/HomeFilled";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
-import PersonIcon from "@mui/icons-material/Person";
 import BarChartIcon from "@mui/icons-material/BarChart";
+import TimerIcon from "@mui/icons-material/Timer";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -19,8 +19,8 @@ const Footer = () => {
       <div className="footer__chart" onClick={() => navigate("/progress")}>
         <BarChartIcon sx={{ fontSize: 32, cursor: "pointer" }} />
       </div>
-      <div className="footer__profile" onClick={() => navigate("/profile")}>
-        <PersonIcon sx={{ fontSize: 32, cursor: "pointer" }} />
+      <div className="footer__profile" onClick={() => navigate("/timer")}>
+        <TimerIcon sx={{ fontSize: 32, cursor: "pointer" }} />
       </div>
     </footer>
   );
