@@ -10,9 +10,9 @@ const Quote = () => {
     const fetchQuote = async () => {
       try {
         const res = await axios.get("http://localhost:3001/api/quote");
-        if (res.data && res.data[0]) {
-          setQuote(res.data[0].q);
-          setAuthor(res.data[0].a);
+        if (res.data) {
+          setQuote(res.data.quote);
+          setAuthor(res.data.author);
         }
       } catch (err) {
         console.error("Failed to fetch quote:", err);
